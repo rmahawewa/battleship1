@@ -1,5 +1,7 @@
 exports.Ship = (name, length) => {
 
+    let ship_array = [];
+
     let shipSkeltn = () => {
         for(let i=0; i<length; i++){
             ship_array[i] = 1;
