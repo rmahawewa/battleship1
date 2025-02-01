@@ -54,9 +54,9 @@ const ship3 = Ship("cruiser", 3)
 const ship4 = Ship("battleship", 4)
 const ship5 = Ship("carrier", 5)
 
-const ships = [ship1, ship2, ship3, ship4, ship5]
+const ships = ["destroyer", "submarine", "cruiser", "battleship", "carrier"]
 
-function addShipPiece(ship){  
+function addShipPiece(ships){  
 
     const allBoardBlocks = document.querySelectorAll('#computer div')
     let randomBoolean = Math.random() < 0.5
@@ -66,7 +66,7 @@ function addShipPiece(ship){
 
     let shipBlocks = []
 
-    for (let i = 0; i<ship.length; i++){
+    for (let i = 0; i<ships.length; i++){
         if(isHorizontal){
             shipBlocks.push(allBoardBlocks[Number(randomStartIndex) + i])
         } else{
@@ -77,7 +77,7 @@ function addShipPiece(ship){
     console.log(shipBlocks);
 
     shipBlocks.forEach(shipBlock => {
-        shipBlock.classList.add(ship.name)
+        shipBlock.classList.add(ships.name)
         shipBlock.classList.add('taken')
     })
 

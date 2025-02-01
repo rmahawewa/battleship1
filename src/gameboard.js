@@ -3,7 +3,7 @@ const {Ship} = require("./ship.js");
 exports.Gameboard = () => {
     let ships = [
         {
-            ship_name: "ship1",
+            ship_name: "destroyer",
             length: 2,
             coordinate1: "",
             coordinate2: "",
@@ -12,7 +12,7 @@ exports.Gameboard = () => {
             is_sunk: false,
         },
         {
-            ship_name: "ship2",
+            ship_name: "submarine",
             length: 3,
             coordinate1: "",
             coordinate2: "",
@@ -21,7 +21,7 @@ exports.Gameboard = () => {
             is_sunk: false,
         },
         {
-            ship_name: "ship3",
+            ship_name: "cruiser",
             length: 4,
             coordinate1: "",
             coordinate2: "",
@@ -30,7 +30,7 @@ exports.Gameboard = () => {
             is_sunk: false,
         },
         {
-            ship_name: "ship4",
+            ship_name: "battleship",
             length: 5,
             coordinate1: "",
             coordinate2: "",
@@ -38,7 +38,7 @@ exports.Gameboard = () => {
             hit_position: "",
             is_sunk: false,
         },{
-            ship_name: "ship5",
+            ship_name: "carrier",
             length: 6,
             coordinate1: "",
             coordinate2: "",
