@@ -1,6 +1,24 @@
-.options-container{
+#gamesBoardContainer{
     width: 500px;
-    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.game-board{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.block{
+    width: 20px;
+    height: 20px;
+}
+
+.option-container{
+    width: 500px;
+    height: 60px;
     margin: 30px 0;
     background-color: yellow;
     display: flex;
@@ -27,50 +45,32 @@
     background-color: blue;
 }
 
-.ship1{
+.destroyer-preview{
     width: 20px;
     height: 10px;
     margin: 3px;
 }
 
-.ship2{
+.submarine-preview{
     width: 30px;
     height: 10px;
     margin: 3px;
 }
 
-.ship3{
-    width:30px;
+.cruiser-preview{
+    width: 30px;
     height: 10px;
     margin: 3px;
 }
 
-.ship4{
+.battleship-preview{
     width: 40px;
     height: 10px;
     margin: 3px;
 }
 
-.ship5{
+.carrier-preview{
     width: 50px;
     height: 10px;
     margin: 3px;
-}
-
-.game-board{
-    width: 200px;
-    height:200px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#gamesboard-container{
-    width: 500px;
-    display:flex;
-    justify-content: space-between;
-}
-
-.block{
-    width: 20px;
-    height: 20px;
 }
